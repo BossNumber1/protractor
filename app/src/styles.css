@@ -15,7 +15,7 @@
     border-radius: 20px;
 }
 
-.box {
+.endBlock {
     position: absolute;
     margin-left: 900px;
     margin-top: 300px;
@@ -29,7 +29,7 @@
     border-color: black;
 }
 
-.box2 {
+.startBlock {
     width: 1265px;
     height: 540px;
     display: flex;

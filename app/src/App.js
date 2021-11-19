@@ -1,7 +1,7 @@
 import "./styles.css";
 import { useState } from "react";
-import Box from "./components/Box";
-import Box2 from "./components/Box2";
+import EndBlock from "./components/EndBlock";
+import StartBlock from "./components/StartBlock";
 
 function App() {
     const [index, setIndex] = useState(1);
@@ -11,12 +11,10 @@ function App() {
     }
 
     return (
-        <>
-            <div className="app">
-                <Box card={index === 1} moveCard={moveCard.bind(null, 1)}></Box>
-            </div>
-            <Box2 card={index === 2} moveCard={moveCard.bind(null, 2)}></Box2>
-        </>
+        <div className="app">
+            <StartBlock card={index === 2} moveCard={moveCard.bind(null, 2)} />
+            <EndBlock card={index === 1} moveCard={moveCard.bind(null, 1)} />
+        </div>
     );
 }
 

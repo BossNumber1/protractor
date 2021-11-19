@@ -2,7 +2,7 @@ import React from "react";
 import { useDrop } from "react-dnd";
 import Card from "./Card";
 
-function Box({ card, moveCard }) {
+function EndBlock({ card, moveCard }) {
     const [{ isOver }, dropRef] = useDrop({
         accept: "card",
         drop: () => moveCard(),
@@ -12,7 +12,7 @@ function Box({ card, moveCard }) {
     });
     return (
         <div
-            className="box"
+            className="endBlock"
             ref={dropRef}
             style={{
                 backgroundColor: isOver ? "#bbb" : "red",
@@ -23,4 +23,4 @@ function Box({ card, moveCard }) {
     );
 }
 
-export default Box;
+export default EndBlock;
