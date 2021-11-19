@@ -1,10 +1,10 @@
 import "./styles.css";
-import { useState } from "react";
+import React from "react";
 import EndBlock from "./components/EndBlock";
 import StartBlock from "./components/StartBlock";
 
 function App() {
-    const [index, setIndex] = useState(1);
+    const [index, setIndex] = React.useState(1);
 
     function moveCard(i) {
         setIndex(i);
